@@ -1,0 +1,101 @@
+body {
+    background-color: #B0B0B0;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    margin: auto;
+    font-size: 20px;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.titulo {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.box {
+    width: calc(34% - 40px);
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.box h2 {
+    border-bottom: 3px solid black;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.box img {
+    max-width: 100%;
+    height: 40%;
+}
+
+.box p {
+    margin-top: 10px;
+}
+
+.box .old,
+.box .new {
+    display: block;
+    padding: 3px 10px;
+    text-align: center;
+}
+
+.old {
+    color: #1f3f41;
+    font-size: 17px;
+    text-decoration: line-through;
+}
+
+.new {
+    color: #0f2324;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .box {
+        width: calc(50% - 30px);
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .box {
+        width: calc(100% - 30px);
+    }
+
+    .content {
+        justify-content: center;
+    }
+
+}
